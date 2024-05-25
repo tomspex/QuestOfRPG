@@ -1,23 +1,23 @@
 import data
 import func
-import classes
+import player
+import operations
 
-player = classes.player()
+player = player.player()
 
 while True:
-	print("You are currently " 
-		+ player.location["preposition"] 
-		+ " " 
-		+ player.location["name"] 
-		+ "."
-	)
-	print("What do you wish to do? (input ? for a list of operations)\n")
-	answer = input()
-	match answer:
-		case "inventory":
-			player.get_inventory()
-		case "damage":
-			print("Pick the item you wish to see the damage of.\n")
-			player.get_item_damage(input())
-		case "leave":
-			quit()
+    print("\nYou are currently " 
+        + player.location["preposition"] 
+        + " " 
+        + player.location["name"] 
+        + "."
+    )
+    print("What do you wish to do? (input \"help\" for a list of operations)\n")
+    answer = input()
+    try:
+        exec("operations." + answer + "(player)")
+    except:
+        if(answer == "exit"):
+            quit()
+        else:
+            print("Input is not valid.")
