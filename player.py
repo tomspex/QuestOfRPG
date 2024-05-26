@@ -1,6 +1,9 @@
 import data
 
 class player:
+    max_health = 10
+    max_mana = 5
+
     location = 1
     health = 10
     mana = 5

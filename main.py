@@ -3,7 +3,7 @@ import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame
 
-import globalvar
+import global_var
 import game
 import data
 import player
@@ -27,7 +27,7 @@ bg = pygame.transform.scale(bg, screen.get_size())
 
 background_color = (0, 0, 0)
 
-while globalvar.running:
+while global_var.running:
     screen.fill(background_color)
 
     screen.blit(bg, (0, 0))

@@ -5,7 +5,28 @@
     },
     {
         "name": "your house",
-        "preposition": "in"
+        "preposition": "in",
+        "commands": [
+            "sleep"
+        ],
+        "inspect_list": [
+            {
+                "name":"front door",
+                "type":"door",
+                "door_target":2,
+                "message":"The front door to your home. It leads outside."
+            },
+            {
+                "name":"bed",
+                "type":"bed",
+                "message":"It's just your bed."
+            },
+            {
+                "name":"bookshelf",
+                "type":"message",
+                "message":"It's an elegant, hand-crafted bookshelf."
+            }
+        ]
     },
     {
         "name": "your house",
