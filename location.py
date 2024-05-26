@@ -1,3 +1,6 @@
+import sys
+
+import globalvar
 import data
 import operations
 
@@ -7,9 +10,7 @@ def run_location(player):
         exec("operations." + answer + "(player)")
     except:
         if(answer == "exit"):
-            return False
+            globalvar.running = False
         elif(len(answer) != 0):
             print(answer + " is not a valid command.\n")
             operations.help(player)
-    #input()
-    return True
