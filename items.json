@@ -1,0 +1,12 @@
+[
+    {
+        "name": "sword",
+        "catagory": "weapon",
+        "damage": 5
+    },
+    {
+        "name": "grape",
+        "catagory": "food",
+        "energy": 1
+    }
+]

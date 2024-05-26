@@ -1,8 +1,9 @@
-items = [
-	{"name": "sword", "damage": 5},
-	{"name": "grape", "damage": 1}
-]
+import json
 
-locations = [
-	{"name": "your house", "preposition": "in"}
-]
+file = open("items.json")
+items = json.load(file)
+file.close()
+
+file = open("locations.json")
+locations = json.load(file)
+file.close()
