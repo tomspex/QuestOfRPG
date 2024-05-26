@@ -8,10 +8,10 @@ import location_oper
 def run_location(player):
     answer = input()
     try:
-        exec("operations." + answer + "(player)")
+        exec("operations." + answer.replace(" ", "") + "(player)")
     except:
         try:
-            exec("location_oper." + answer + "(player)")
+            exec("location_oper." + answer.replace(" ", "") + "(player)")
         except:
             if(answer == "exit"):
                 global_var.running = False

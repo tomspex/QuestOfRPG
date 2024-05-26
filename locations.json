@@ -6,30 +6,76 @@
     {
         "name": "your house",
         "preposition": "in",
+        "music": "insidehouse.mp3",
+		"bg": "insidehouse.png",
         "commands": [
             "sleep"
         ],
         "inspect_list": [
             {
-                "name":"front door",
-                "type":"door",
-                "door_target":2,
-                "message":"The front door to your home. It leads outside."
+                "name": "front door",
+                "type": "door",
+                "door_target": 2,
+                "message": "The front door to your home. It leads outside."
             },
             {
-                "name":"bed",
-                "type":"bed",
-                "message":"It's just your bed."
+                "name": "bed",
+                "type": "bed",
+                "message": "It's just your bed."
             },
             {
-                "name":"bookshelf",
-                "type":"message",
-                "message":"It's an elegant, hand-crafted bookshelf."
+                "name": "bookshelf",
+                "type": "message",
+                "message": "It's an elegant, hand-crafted bookshelf."
             }
         ]
     },
     {
         "name": "your house",
-        "preposition": "outside"
+        "preposition": "outside",
+        "music": "outsidehouse.mp3",
+		"bg": "outsidehouse.png",
+        "commands": [
+            "throw brick at window"
+        ],
+        "inspect_list": [
+            {
+                "name": "front door",
+                "type": "door",
+                "door_target": 1,
+                "message": "The front door to your home. It leads inside."
+            },
+            {
+                "name": "vines",
+                "type": "message",
+                "message": "Some vines are growing up the side of your home."
+            },
+            {
+                "name": "window",
+                "type": "window",
+                "smashed": false,
+                "message": "One of the windows on your house."
+            },
+            {
+                "name": "dirt path",
+                "type": "door",
+                "door_target": 3,
+                "message": "This path leads to the forest."
+            }
+        ]
+    },
+    {
+        "name": "the forest",
+        "preposition": "in",
+        "music": "forest.mp3",
+        "bg": "forest.png",
+        "inspect_list": [
+            {
+                "name": "dirt path",
+                "type": "door",
+                "door_target": 2,
+                "message": "This path leads back to your house."
+            }
+        ]
     }
 ]
