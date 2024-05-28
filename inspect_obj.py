@@ -1,4 +1,4 @@
-import graphics
+import reset_win
 import player
 import location_oper
 import global_var
@@ -10,7 +10,8 @@ def door(p:player.player, obj):
     if(input() == "y"):
         print("Entering the " + obj["name"] + "...")
         p.location = obj["door_target"]
-        global_var.bg = graphics.refresh(p)
+        global_var.bg = reset_win.refresh_graphics(p)
+        reset_win.refresh_audio(p)
         operations.location(p)
 
 def bed(p:player.player, obj):

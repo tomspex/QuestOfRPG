@@ -34,7 +34,7 @@
         "name": "your house",
         "preposition": "outside",
         "music": "outsidehouse.mp3",
-		"bg": "outsidehouse.png",
+	"bg": "outsidehouse.png",
         "commands": [
             "throw brick at window"
         ],
@@ -75,6 +75,46 @@
                 "type": "door",
                 "door_target": 2,
                 "message": "This path leads back to your house."
+            },
+            {
+                "name": "deeper forest",
+                "type": "door",
+                "door_target": 4,
+                "message": "It's only more woods ahead. The path ends here."
+            }
+        ]
+    },
+    {
+        "name": "the deeper forest",
+        "preposition": "in",
+        "music": "forest.mp3",
+        "bg": "deeperforest.png",
+        "inspect_list": [
+            {
+                "name": "way back",
+                "type": "door",
+                "door_target": 3,
+                "message": "You still have the option to go back."
+            },
+            {
+                "name": "cave",
+                "type": "door",
+                "door_target": 5,
+                "message": "A dark cave is ahead."
+            }
+        ]
+    },
+    {
+        "name": "the cave",
+        "preposition": "in",
+        "music": "cave.mp3",
+        "bg": "cave.png",
+        "inspect_list": [
+            {
+                "name": "cave entrance",
+                "type": "door",
+                "door_target": 4,
+                "message": "The exit to the cave."
             }
         ]
     }
